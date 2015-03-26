@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS"
+        android:id="@+id/accuracy"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Parada"
+        android:id="@+id/addParada"
+        android:background="#ff00a819"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/nomeRota"
+        android:layout_alignParentStart="true" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parada Não Existe"
+        android:id="@+id/paradaInexistente"
+        android:background="#ffe10400"
+        android:layout_alignTop="@+id/addParada"
+        android:layout_alignEnd="@+id/salvar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar Rota"
+        android:id="@+id/salvar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tamanho da rota: "
+        android:id="@+id/percursoSize"
+        android:layout_below="@+id/addParada"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rota: "
+        android:id="@+id/labelNomeRota"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/accuracy" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomeRota"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/addParada"
+        android:layout_toEndOf="@+id/labelNomeRota" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Velocidade Atual: "
+        android:id="@+id/labelvelocidadeAtual"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS: "
+        android:id="@+id/labelgps"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/accuracy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:id="@+id/velocidadeAtual"
+        android:layout_alignTop="@+id/labelvelocidadeAtual"
+        android:layout_toEndOf="@+id/percursoSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:id="@+id/tamanhoPercurso"
+        android:layout_alignBottom="@+id/percursoSize"
+        android:layout_toEndOf="@+id/percursoSize" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Viagem"
+        android:id="@+id/viagemStart"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/velocidadeAtual"
+        android:layout_toEndOf="@+id/labelvelocidadeAtual" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dropbox"
+        android:id="@+id/dropbox"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
