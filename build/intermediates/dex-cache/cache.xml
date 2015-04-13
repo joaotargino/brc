@@ -2,18 +2,25 @@
 <items version="2" >
 
     <item
-        jar="/home/joao/workspace/BusRouteCreator/app/libs/dropbox-android-sdk-1.6.3.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="986e7a58e925c6f91b88ae8d3224a0550b65acc7">
-        <dex dex="/home/joao/workspace/BusRouteCreator/app/build/intermediates/pre-dexed/debug/dropbox-android-sdk-1.6.3-cf7d5744d06d1331959727b3d70421e732828660.jar" />
-    </item>
-    <item
         jar="/home/joao/workspace/BusRouteCreator/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
         <dex dex="/home/joao/workspace/BusRouteCreator/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-ad393cdb8002ba9cc2e090b18d13f062f281a64b.jar" />
+    </item>
+    <item
+        jar="/home/joao/workspace/brc/app/libs/json_simple-1.1.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="5e303a03d04e6788dddfa3655272580ae0fc13bb">
+        <dex dex="/home/joao/workspace/brc/app/build/intermediates/pre-dexed/debug/json_simple-1.1-246696daa8d1d5ec3dc790a1bd288c92caee7755.jar" />
+    </item>
+    <item
+        jar="/home/joao/workspace/BusRouteCreator/app/libs/dropbox-android-sdk-1.6.3.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="986e7a58e925c6f91b88ae8d3224a0550b65acc7">
+        <dex dex="/home/joao/workspace/BusRouteCreator/app/build/intermediates/pre-dexed/debug/dropbox-android-sdk-1.6.3-cf7d5744d06d1331959727b3d70421e732828660.jar" />
     </item>
     <item
         jar="/home/joao/workspace/BusRouteCreator/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
@@ -30,11 +37,25 @@
         <dex dex="/home/joao/workspace/BusRouteCreator/app/build/intermediates/pre-dexed/debug/json_simple-1.1-ea13f1809b230282a9dc814ebc64e6b2df12508d.jar" />
     </item>
     <item
-        jar="/home/joao/workspace/BusRouteCreator/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jar="/home/joao/workspace/brc/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="/home/joao/workspace/BusRouteCreator/app/build/intermediates/pre-dexed/debug/classes-dd5a8932280e24babc88c4fe407dc352963fc94f.jar" />
+        <dex dex="/home/joao/workspace/brc/app/build/intermediates/pre-dexed/debug/classes-2b0ac69280d6f52e0b07e513afab87aa3735e6d4.jar" />
+    </item>
+    <item
+        jar="/home/joao/workspace/brc/app/libs/dropbox-android-sdk-1.6.3.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="986e7a58e925c6f91b88ae8d3224a0550b65acc7">
+        <dex dex="/home/joao/workspace/brc/app/build/intermediates/pre-dexed/debug/dropbox-android-sdk-1.6.3-88d449f87a239ba6e0ee0c26c56c45e1d6df1d16.jar" />
+    </item>
+    <item
+        jar="/home/joao/workspace/brc/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/home/joao/workspace/brc/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-59427f1c967f093427e156c3003ffc6367711186.jar" />
     </item>
     <item
         jar="/home/joao/android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
@@ -42,6 +63,20 @@
         revision="22.0.0"
         sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
         <dex dex="/home/joao/workspace/BusRouteCreator/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-338568f3e468fdebcdbd6b4413c20a44b2228aa8.jar" />
+    </item>
+    <item
+        jar="/home/joao/workspace/brc/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/home/joao/workspace/brc/app/build/intermediates/pre-dexed/debug/classes-64f9c924f914eb3c8f0327f2e6ade4020e84d428.jar" />
+    </item>
+    <item
+        jar="/home/joao/workspace/BusRouteCreator/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/home/joao/workspace/BusRouteCreator/app/build/intermediates/pre-dexed/debug/classes-dd5a8932280e24babc88c4fe407dc352963fc94f.jar" />
     </item>
 
 </items>

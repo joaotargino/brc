@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
+import java.io.File;
 import java.util.ArrayList;
 import android.app.Activity;
 import android.content.SharedPreferences;
@@ -39,6 +40,7 @@ public class DropboxActivity extends Activity implements OnClickListener {
     private Button logIn;
     private Button uploadFile;
     private Button listFiles;
+    private Button removeFiles;
     private LinearLayout container;
 
     @Override
@@ -52,6 +54,8 @@ public class DropboxActivity extends Activity implements OnClickListener {
         uploadFile.setOnClickListener(this);
         listFiles = (Button) findViewById(R.id.list_files);
         listFiles.setOnClickListener(this);
+        removeFiles = (Button) findViewById(R.id.remove);
+        removeFiles.setOnClickListener(this);
         container = (LinearLayout) findViewById(R.id.container_files);
 
         loggedIn(false);
@@ -133,6 +137,23 @@ public class DropboxActivity extends Activity implements OnClickListener {
                 UploadFileToDropbox upload = new UploadFileToDropbox(this, dropbox,
                         FILE_DIR);
                 upload.execute();
+                break;
+            case R.id.remove:
+
+                try{
+                    String filespath = this.getApplicationContext().getFilesDir().getPath();
+
+                    File f = new File(filespath);
+                    File file[] = f.listFiles();
+                    System.out.println("Size: "+ file.length);
+                    for (int i=0; i < file.length; i++) {
+                        boolean deleted = file[i].delete();
+                }
+                    Toast.makeText(this, "Arquivos removidos com sucesso.",
+                            Toast.LENGTH_SHORT).show();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
                 break;
             default:
                 break;

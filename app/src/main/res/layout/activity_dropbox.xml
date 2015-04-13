@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="#176CEC"
-        android:text="Login to Dropbox"
+        android:text="Login Dropbox"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#fff"
         android:textStyle="bold" />
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="#176CEC"
-        android:text="Upload File to Dropbox"
+        android:text="Enviar Arquivos Para Dropbox"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#fff"
         android:textStyle="bold" />
@@ -34,7 +34,18 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="#176CEC"
-        android:text="List All Files"
+        android:text="Listar Arquivos do Dropbox"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#ffec0010"
+        android:text="Remover Arquivos Locais"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#fff"
         android:textStyle="bold" />

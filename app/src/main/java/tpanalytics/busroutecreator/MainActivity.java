@@ -21,6 +21,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -113,7 +114,7 @@ public class MainActivity extends Activity implements OnClickListener {
         }
 
         // location updates: at least 1 meter and 1secs change
-        locationManager.requestLocationUpdates(provider, 1000, 1.0F, mylistener);
+        locationManager.requestLocationUpdates(provider, 10000, 1.0F, mylistener);
 
         IntentFilter j = new IntentFilter(
                 "tpanalytics.busroutecreator.CURRENT_POSITION");
@@ -153,6 +154,7 @@ public class MainActivity extends Activity implements OnClickListener {
         else if(target == viagemStart){
             iniciaViagem = true;
             horaInicioViagem = hr + ":" + min + ":" + sec;
+            viagemStart.setText("Viagem iniciada");
             viagemStart.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_bright));
         }
 
@@ -223,10 +225,13 @@ public class MainActivity extends Activity implements OnClickListener {
             alert.show();
         }
         else if(target == salvar){
+            Toast.makeText(this, "Salvando a viagem, calma.",
+                    Toast.LENGTH_SHORT).show();
 //            FILE_DIR -> getApplicationContext().getFilesDir().getPath() = /data/data/tpanalytics.busroutecreator/files
 //            System.out.println(getApplicationContext().getFilesDir().getPath());
             iniciaViagem = false;
             viagemStart.setBackgroundColor(getResources().getColor(android.R.color.darker_gray));
+            viagemStart.setText("Iniciar Viagem");
 
             if(nomeRota.getText().toString().isEmpty())
                 nomeRota.setText("Rota");
@@ -273,7 +278,8 @@ public class MainActivity extends Activity implements OnClickListener {
                 outputStreamRota.write(entradaRota.getBytes());
                 outputStreamRota.close();
 
-
+                Toast.makeText(this, "Viagem salva com sucesso.",
+                        Toast.LENGTH_SHORT).show();
             } catch (Exception e) {
                 e.printStackTrace();
             }
