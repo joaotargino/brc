@@ -67,6 +67,7 @@ public class UploadFileToDropbox extends AsyncTask<Void, Void, Boolean> {
 
     @Override
     protected void onPostExecute(Boolean result) {
+
         if (result) {
 //            try{
 //                String filespath = context.getApplicationContext().getFilesDir().getPath();
@@ -81,11 +82,11 @@ public class UploadFileToDropbox extends AsyncTask<Void, Void, Boolean> {
 //            } catch (Exception e) {
 //                e.printStackTrace();
 //            }
-            Toast.makeText(context, "File Uploaded Sucesfully!",
+            Toast.makeText(context, "Arquivos enviados com sucesso!",
                     Toast.LENGTH_LONG).show();
 
         } else {
-            Toast.makeText(context, "Failed to upload file", Toast.LENGTH_LONG)
+            Toast.makeText(context, "Falha ao enviar arquivos, tente novamente!", Toast.LENGTH_LONG)
                     .show();
         }
     }

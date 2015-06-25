@@ -91,7 +91,7 @@ public class DropboxActivity extends Activity implements OnClickListener {
                 editor.commit();
                 loggedIn(true);
             } catch (IllegalStateException e) {
-                Toast.makeText(this, "Error during Dropbox authentication",
+                Toast.makeText(this, "Erro de autenticação no Dropbox",
                         Toast.LENGTH_SHORT).show();
             }
         }
@@ -101,7 +101,7 @@ public class DropboxActivity extends Activity implements OnClickListener {
         isLoggedIn = isLogged;
         uploadFile.setEnabled(isLogged);
         listFiles.setEnabled(isLogged);
-        logIn.setText(isLogged ? "Log out" : "Log in");
+        logIn.setText(isLogged ? "Logout" : "Login");
     }
 
     private final Handler handler = new Handler() {
@@ -134,6 +134,8 @@ public class DropboxActivity extends Activity implements OnClickListener {
                 list.execute();
                 break;
             case R.id.upload_file:
+                Toast.makeText(this, "Enviando arquivos para o dropbox!",
+                        Toast.LENGTH_LONG).show();
                 UploadFileToDropbox upload = new UploadFileToDropbox(this, dropbox,
                         FILE_DIR);
                 upload.execute();
